@@ -10,7 +10,7 @@
   host/network/file I/O (fetch, collect-rdns, the seed→merged main pipeline) is behind
   #?(:clj …). The Python __main__ CLI / argv dispatch is NOT ported (no tests cover it) —
   noted here in the docstring. There is no clojure.test suite for this module."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [ipaddress.methods.ip-edn :as ip-edn]))
 
 (def rir-id

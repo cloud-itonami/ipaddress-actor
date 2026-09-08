@@ -16,7 +16,7 @@
   defaultdict iteration order: Python defaultdicts iterate in first-touch order. We track
   first-touch order via the accumulators below so sorts tie exactly the Python order
   (sorted(..., key=-v) is a stable sort over that order)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [ipaddress.methods.ip-edn :as ip-edn]))
 
 ;; ── ordered (first-touch-tracking) accumulator (mirror Python defaultdict order) ──
