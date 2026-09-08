@@ -18,7 +18,7 @@
   SELF-CONTAINED: inlines sha-256 + canonical JSON (no external deps). The Python __main__
   demo is omitted. NOTE: NO `socket`/`urllib`/`http`/`subprocess`/`requests` here — the
   no-external-I/O test scans this source string."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [ipaddress.methods.analyze :as analyze]
             [ipaddress.methods.ip-edn :as ip-edn]))
 

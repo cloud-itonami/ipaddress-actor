@@ -12,7 +12,7 @@
 
   The Python __main__ runner is replaced by the clojure.test runner / -main below."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])
             [ipaddress.methods.autorun :as autorun]
             [ipaddress.methods.kotoba :as kotoba]))

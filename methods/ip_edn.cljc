@@ -7,7 +7,7 @@
   (kept as \":ns/name\" strings), nil/true/false, nested vectors; maps preserve
   insertion order. Classifier buckets rirs/asns/ranges/ips (keyed by id) +
   announces/members/geos/rdns/whois (lists)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── reader (same proven char-cursor reader as the *_edn family) ─────────────
 (def ^:private eof ::eof)

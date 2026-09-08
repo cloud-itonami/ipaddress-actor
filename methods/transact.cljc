@@ -8,7 +8,7 @@
   House style: rows-to-datoms + schema-datoms are pure & portable; the HTTP push (_post),
   the schema-file read, and the main/argv CLI dispatch are behind #?(:clj …) / omitted (no
   tests cover them) — noted here. There is no clojure.test suite for this module."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [ipaddress.methods.ip-edn :as ip-edn]))
 
 (def nsid-transact "com.etzhayyim.apps.kotoba.datomic.transact")
