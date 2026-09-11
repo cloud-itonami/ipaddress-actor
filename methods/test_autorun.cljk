@@ -110,8 +110,8 @@
 ;; ── test_no_external_io ─────────────────────────────────────────────────────────
 (deftest test-no-external-io
   #?(:clj
-     (let [src (str (slurp (io/resource "ipaddress/methods/autorun.cljc"))
-                    (slurp (io/resource "ipaddress/methods/kotoba.cljc")))]
+     (let [src (str (slurp (io/resource "ipaddress/methods/autorun.cljk"))
+                    (slurp (io/resource "ipaddress/methods/kotoba.cljk")))]
        ;; "import" forms of external I/O must not appear as live require/import targets.
        ;; Mirror the Python banned-substring check (the docstring NOTE that names them is the
        ;; only occurrence — matching how the Python source's own docstring would; here our
