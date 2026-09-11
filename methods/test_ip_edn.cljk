@@ -1,5 +1,5 @@
 #!/usr/bin/env bb
-;; Clojure test for methods/ip_edn.cljc — reader + classify + edn serializer.
+;; Clojure test for methods/ip_edn.cljk — reader + classify + edn serializer.
 ;; (No python test existed for ip_edn; fresh coverage, parity with ip_edn.py.)
 (ns ipaddress.methods.test-ip-edn
   "Guards classify bucket counts against the ip_edn.py baseline on the real seed
