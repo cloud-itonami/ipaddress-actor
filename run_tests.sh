@@ -4,4 +4,4 @@
 # autorun/kotoba heartbeat suite into the fleet green-check (was previously unwired).
 set -euo pipefail
 cd "$(dirname "$0")/../.."
-exec bb -e '(require (quote clojure.test) (quote ipaddress.methods.test-autorun))(let [r (clojure.test/run-tests (quote ipaddress.methods.test-autorun))](System/exit (if (zero? (+ (:fail r) (:error r))) 0 1)))'
+exec kbb -e '(require (quote clojure.test) (quote ipaddress.methods.test-autorun))(let [r (clojure.test/run-tests (quote ipaddress.methods.test-autorun))](System/exit (if (zero? (+ (:fail r) (:error r))) 0 1)))'
