@@ -7,7 +7,7 @@
   rdns 2 / whois 3), keyed-vs-list buckets, and the edn-val serializer."
   (:require [ipaddress.methods.ip-edn :as ip]
             [clojure.java.io :as io]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (def ^:private here (-> *file* io/file .getAbsoluteFile .getParentFile .getParentFile))
 (defn- seed [name] (str (io/file here "data" name)))
